@@ -1,0 +1,21 @@
+#include<iostream>
+using namespace std;
+int fab(int n){
+if(n==1 || n==2){
+    return 1;
+}
+if(n==0){
+		return 0;
+}
+  else
+    return (fab(n-1) + fab(n-2));
+}
+int main(){
+  int num,i;
+  cout<<"Enter number :";
+  cin>>num;
+for(i=0 ; i<num ; i++) {
+  cout<<"Fibonacci number "<<fab(i);
+	cout<<"\n";
+  }
+}
